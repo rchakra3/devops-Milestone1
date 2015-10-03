@@ -19,6 +19,7 @@
 
 1. [Jenkins.xml](jenkins.xml)
 2. [Maven Project](https://github.com/rchakra3/temp-mvn)
+3. [Screencast](https://www.youtube.com/watch?v=rgNuKM52sgM&feature=youtu.be) 
 
 
 ### Overview
@@ -34,27 +35,23 @@ The project that we are using for this milestone is a simple Maven project which
 ## Jenkins Build server
 
 Jenkins server performs the following tasks:
-### Ability to trigger a build 
+
+- Ability to trigger a build 
 In response to a commit in a particular branch, a new build is started on the Jenkins server. We have configured two Jenkins jobs specific to two branches *master* and *dev*. Whenever a commit is pushed to a particular branch, the Jenkins job pulls the fresh code and a build specific to that branch is triggered.
 
-### Ability to execute a build job via a Build Manager
+- Ability to execute a build job via a Build Manager
 Since the project that we are using is a Maven project, Maven takes care of initiaiting a clean build every time the job is executed. The Jenkins job automatically runs the Maven command:
 
 ```
 mvn clean install
 ```
 
-### Determine success or failure of a build job
+- Determine success or failure of a build job
 The status of the build is displayed on the Jenkins UI in the Build History tab specific to the job. The color against the build indicates the status of the build, Red for Failure or Blue for Success and Yellow for Test Failure.
 Post build, an email regarding the status of the build job is sent to the specified recipients. The plugin Email-ext was used for this purpose.
 
-### Build multiple branches of the repository
+- Build multiple branches of the repository
 We have setup two separate Jenkins jobs pertaining to the `master` and `dev` branches. Whenever a commit is pushed to a particular branch, the job specific to that branch gets initiated. We have shown this a part of the milestone screencast.
 
-### Track of past builds
+- Track of past builds
 The Jenkins UI shows the status of the past builds that were triggered against that job. It also shows the color coded status of those jobs and clicking on an individual build would give the details specific to that build.
-
-## Jenkins Configuration file 
-
-## Screencast and code 
-The screencast can be found at the following [URL](https://www.youtube.com/watch?v=rgNuKM52sgM&feature=youtu.be) and the Maven project code is present in the same repository
