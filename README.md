@@ -12,7 +12,8 @@
 
 ***Vinay Suryadevara***: Setup the maven project and helped with the jenkins server and recorded the screencast for the demo.
 
-***Rohan Chankravarthy***:
+***Rohan Chankravarthy***: Setup the Jenkins server on the droplet and configured the web hook to work on the github repo and jenkins
+
 
 
 This milestone required us to configure/build a build server. We have setup the Jenkins build server on a DigitalOcean droplet. The following plugins were installed onto the Jenkins server:
