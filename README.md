@@ -6,6 +6,7 @@
 + Sagar Muchhal (srmuchha)
 + Vinay Suryadevara (vksuryad)
 + Rohan Chakravarthy (rchakra3)
+
 ### Individual contributions
 ***Sagar Muchhal***: Setup the Jenkins server on the droplet and the Maven project that is being used for the build pruposes. Helped with the documentation.
 
