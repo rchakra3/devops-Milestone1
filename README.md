@@ -12,12 +12,21 @@
 
 ***Vinay Suryadevara***: Setup the maven project and helped with the jenkins server and recorded the screencast for the demo.
 
-***Rohan Chankravarthy***: Setup the Jenkins server on the droplet and configured the web hook to work on the github repo and jenkins
+***Rohan Chakravarthy***: Setup the Jenkins server on the droplet and configured the web hook to work on the github repo and jenkins
 
 
+### Artifacts
+
+1. [Jenkins.xml](jenkins.xml)
+2. [Maven Project](https://github.com/rchakra3/temp-mvn)
+
+
+### Overview
 
 This milestone required us to configure/build a build server. We have setup the Jenkins build server on a DigitalOcean droplet. The following plugins were installed onto the Jenkins server:
+
 1. Github plugin: This enables the Jenkins server to communicate to remote Git repositories.
+
 2. Email-ext plugin: This enables the Jenkins server to shoot emails based upon the status of builds such as SUCCESS, FAILED etc.
 
 The project that we are using for this milestone is a simple Maven project which has a unit test associated with it. The steps to setup the Maven project were taken from [here](http://www.mkyong.com/maven/how-to-create-a-java-project-with-maven/). After a successful build, the unit test case gets executed and the result of the test case execution is displayed on the UI of the Jenkins job.
@@ -30,6 +39,7 @@ In response to a commit in a particular branch, a new build is started on the Je
 
 ### Ability to execute a build job via a Build Manager
 Since the project that we are using is a Maven project, Maven takes care of initiaiting a clean build every time the job is executed. The Jenkins job automatically runs the Maven command:
+
 ```
 mvn clean install
 ```
