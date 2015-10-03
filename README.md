@@ -57,4 +57,4 @@ The Jenkins UI shows the status of the past builds that were triggered against t
 ## Jenkins Configuration file 
 
 ## Screencast and code 
-The screencast can be found at the following [URL]() and the Maven project code is present in the same repository
+The screencast can be found at the following [URL](https://www.youtube.com/watch?v=rgNuKM52sgM&feature=youtu.be) and the Maven project code is present in the same repository
